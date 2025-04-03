@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "海外日付を日本形式に変換",
+  "version": "1.0",
+  "description": "ウェブページ内の日付を日本仕様（YYYY年M月D日）に変換します。",
+  "permissions": ["activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
